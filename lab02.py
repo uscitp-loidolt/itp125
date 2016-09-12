@@ -1,11 +1,13 @@
- def the_flying_circus():
-    if (1 == 1):
-        return True;
+pyg = 'ay'
 
-    elif (2 == 2 or 3 == 3):
-        return True;
+original = raw_input('Enter a word:')
 
-    else:
-        return True;
+if len(original) > 0 and original.isalpha():
+    print "Your word in english: " + original
+    word = original.lower()
+    first = word[0]
+    new_word = word[1:len(word)] + first + pyg
+    print "Your word in pig latin: " + new_word
 
-the_flying_circus()
+else:
+    print 'empty'
